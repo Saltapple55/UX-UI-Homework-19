@@ -11,22 +11,23 @@
     </head>
     <body>
         <header class="navigation">
-            <div class ="inline-block" "logo">
+          <!--<div class ="inline-block" "logo">
                 <img src= "images/BirdLogo.png">
-            </div>
-            
+            </div>-->  
+
             <nav class="inline-block">
                 <ul>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                    <img src= "images/BirdLogo.png">
+                    <li><a href="#heroImg">About</a></li>
+                    <li><a href="#mySkills">Skills</a></li>
+                    <li><a href="#myWork">Work</a></li>
+                    <li><a href="#myContact">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> 
               
         </header>
         <h1>Hi, I'm Audrey!</h1>
-        <section class ="heroImg">
+        <section id ="heroImg">
             <div class = "content">
                 <img src="images/Pigeon.png">
                 <p>I’m Audrey Tjandra, a freelance UX/UI designer. I specialize in UX Research
@@ -38,7 +39,7 @@
             </div>
  <!--  My UX Skills section coded using CSS flex -->
         </section>  
-        <section class = "mySkills">
+        <section id = "mySkills">
             <h1> My UX Skills</h1>
             <div class="flexContainer">
                 <div>
@@ -64,27 +65,43 @@
 
         </section>
  <!-- My Work Section Constructed using CSS Grid -->
-        <section class = "myWork">
+        <section id = "myWork">
             <h1> My Work</h1>
-            <div class = workGrid>  
-                <div>
+            <div class = "workGrid">  
+                <div class = "workItem">
                     <h4>Chess’n Math Association</h4>
-                    <img src = "images/Rectangle 6.png">
+                    <img src = "images/Rectangle 6.png" width = "150px">
                     <p>
                         UX/UI, research, style and product design.
                     </p>
                     <button> See Project</button>
                 </div>
                 
-                <div>
+                <div class = "workItem">
                     <h4>Coming Soon!</h4>
-                    <img src = "images/Pigeon.png">
+                    <img src = "images/Pigeon.png" width = "150px">
                     <p>
                     More and more fun projects are still being worked on!. 
                     </p>
                     <button> See Project</button>
                 </div>
                 <h3> View all projects</h3>
+            </div>
+        </section> 
+        <section id = "myContact">
+            <h1> Get in Touch!</h1>
+            <div class = "contactGrid">  
+                <div>
+                    <h4>Email</h4>
+                    <p>
+                        tjandraaudrey@hotmail.com
+                    </p>
+                </div>
+                <div>
+                    <h4>Phone number</h4>
+                    <p>+1 647-545-9539</p>
+                </div>
+
             </div>
         </section> 
         <footer>
@@ -96,4 +113,9 @@
             </ul>
         </footer>
     </body>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </html>

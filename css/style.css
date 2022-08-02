@@ -1,23 +1,35 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .inline-block{
     display: inline-block;
     vertical-align:top;
+    text-align: center;
 
 }
-.logo{
+/*.logo{
     width: 23%;
     padding: 1%;
     background-color: #E0EEF1;
    
-}
+}*/
 nav{
-    width: 73%;
+    width: 98%;
     padding: 1%;
+    margin: 0 auto;
     text-align: center;
     background-color: #E0EEF1;
+    float: none;
+
+}
+ul {
+    text-align: center;
+}
+li {
     color: #301D17;
     font-family: 'Poppins', Helvetica, sans-serif;
     font-size: 32;
-
 }
 h1{
     font-family: 'Montserrat','Poppins', sans-serif;
@@ -46,8 +58,8 @@ nav ul li{
     line-height: 80px;
      margin: 0 5px;
 }
-.heroImg{
-    height: 600px;
+#heroImg{
+    height: 350px;
     padding: 25px;
 }
 
@@ -87,6 +99,8 @@ nav ul li{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 
 }
 .workGrid div{
@@ -97,10 +111,31 @@ nav ul li{
     padding: 25px 25px;
     margin: 25px;
     text-align: center;
+    width: 400px;
+    
 
 }
 
+.contactGrid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 
+}
+.contactGrid div{
+
+    background-color:#E0EEF1;
+    border-radius: 25px;
+    color: #301D17;
+    padding: 25px 25px;
+    margin: 25px;
+    text-align: center;
+    width: 300px;
+    
+
+}
 
 button{
     color: #301D17;
@@ -110,12 +145,16 @@ button{
     border-radius: 5px;
 
 }
+button:hover{
+    transform: scale(1.2,1.2);
+}
+button:active{
+    background-color: #68C9DE;
+}
 
 footer{
     background-color: #E0EEF1;
     padding: center; 
-    color: #301D17;
-    background-color: #E0EEF1;
     color: #301D17;
     font-family: 'Poppins', Helvetica, sans-serif;
     font-size: 32;
@@ -125,10 +164,13 @@ footer ul{
     margin-left: auto;  
    }
 footer ul li{
-       display: inline-block;
-       line-height: 80px;
-        margin: 0 5px;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
+
+
+
 
 @media only screen and (max-width: 600px){
     .flexContainer {

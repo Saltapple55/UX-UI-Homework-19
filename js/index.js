@@ -17,19 +17,4 @@ $(".workItem").mouseleave(function(){
 });
 
 
-//$("button").hover(function(){
-//$(this).find(".togglecontainer").toggleclass('active')
-//});
-
-//$('searchButton').on('click', function(){
-  //  $(this).toggleclass('active')
-    //if ($(this).hasclass('active')){
-        //statement goes here
-      //  $('searchBar').css('height', '100vh')
-        //$('searchForm')
-
-
-    //}
-
-//})
 
